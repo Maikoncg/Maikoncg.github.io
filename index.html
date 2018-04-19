@@ -124,48 +124,172 @@
 		<div class="container skills-box" id="skillsSection">
 			<h3>Habilidades Profissionais</h3>
 	   		<div class="row">
-	   			<?php
-	   				$skillCircle = "";
-	   				$skillName = array("HTML", "CSS", "JS", "PHP", "Wordpress", "React", "Redux", "Boostrap", "Git", "Rails", "MySQL", "Photoshop", "");
-	   				$skillType = array("html", "css", "js", "php", "wordpress", "react", "redux", "bootstrap", "git", "rails", "mysql", "ps", "");
-
-	   				foreach ($skillName as $index => $value) {
-		           		echo "$skillCircle";
-		            
-	   				$skillCircle = '<div class="col-md-3 col-sm-6">
-		            						<div class="progress green '. $skillType[$index] . '">
-		                						<span class="progress-left">
-		                    					<span class="progress-bar"></span>
-		               							</span>
-		                						<span class="progress-right">
-		                    					<span class="progress-bar"></span>
-		                						</span>
-		                						<div class="progress-value">'
-		                							. $value .
-		         								'</div>
-		            						</div>
-		        						</div>';				
-		        }?>	
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green html	">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">HTML</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green css">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">CSS</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green js">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">JS</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green php">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">PHP</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green wordpress">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">Wordpress</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green react">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">React</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green redux">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">Redux</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green bootstrap">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">Bootstrap</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green git">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">Git</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green rails">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">Rails</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green mysql">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">MySQL</div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 col-sm-6">
+		            <div class="progress green ps">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+		                <div class="progress-value">Photoshop</div>
+		            </div>
+		        </div>
 		        <div class="skills-bar col-md-6 col-sm-6">
 		        	<h3 class="text-center">Habilidades Pessoais</h3>
-		        	<?php 
-		        		$skillBar = "";
-		        		$skillType = array("comu", "pont", "lid", "team", "port", "ing", "");
-		        		$skillName = array("Comunicação", "Pontualidade", "Liderança", "Trabalho em Equipe", "");
-		        		$skillPercentage = array("90%", "100%", "85%", "95%", "");
-
-		        		foreach ($skillName as $index => $value) {
-		        			echo "$skillBar";
-
-		        		$skillBar = '<div class="bar">
-										<div class="skills ' . $skillType[$index] . '">
-											<span class="skill">'
-												. $value .
-												'<i class="val">'. $skillPercentage[$index] .'</i>
-											</span>
-										</div>
-									</div>';
-		        	}?>
+					<div class="bar">
+						<div class="skills comu">
+							<span class="skill">
+								Comunicação 
+								<i class="val">90%</i>
+							</span>
+						</div>
+					</div>
+					<div class="bar">
+					    <div class="skills pont">
+					    	<span class="skill">
+								Pontualidade 
+								<i class="val">100%</i>
+							</span>
+						</div>
+					</div>
+					<div class="bar">
+					    <div class="skills lid">
+					    	<span class="skill">
+								Liderança 
+								<i class="val">85%</i>
+							</span>
+						</div>
+					</div>
+					<div class="bar">
+					    <div class="skills team">
+					    	<span class="skill">
+								Trabalho em Equipe 
+								<i class="val">95%</i>
+							</span>
+						</div>
+					</div>
 				</div>
 				<div class="skills-bar col-md-6 col-sm-6">
 		        	<h3 class="text-center">Línguas</h3>
@@ -180,7 +304,7 @@
 					<div class="bar">
 					    <div class="skills ing">
 					    	<span class="skill">
-								Português 
+								Inglês 
 								<i class="val">90%</i>
 							</span>
 						</div>
